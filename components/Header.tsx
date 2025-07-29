@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LogoutIcon } from './IconComponents';
+import { LogoutIcon, UserIcon } from './IconComponents';
 
 interface HeaderProps {
   activeSection: string;
@@ -23,11 +23,9 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onLogout }) => {
       <div className="flex items-center space-x-4">
         <div className="relative">
           <button onClick={() => setDropdownOpen(!dropdownOpen)} className="flex items-center space-x-2">
-            <img
-              src="https://i.pravatar.cc/40"
-              alt="User Avatar"
-              className="w-10 h-10 rounded-full border-2 border-[#F4C2C2]"
-            />
+            <div className="w-10 h-10 rounded-full border-2 border-[#F4C2C2] flex items-center justify-center bg-[#2A2C2F]">
+              <UserIcon className="w-6 h-6 text-gray-400" />
+            </div>
           </button>
           {dropdownOpen && (
              <div className="absolute right-0 mt-2 w-48 bg-[#2A2C2F] border border-gray-700 rounded-lg shadow-lg z-50">
