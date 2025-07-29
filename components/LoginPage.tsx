@@ -7,7 +7,7 @@ interface LoginPageProps {
 }
 
 const CredentialsStep: React.FC<{ onNext: (email: string) => void }> = ({ onNext }) => {
-  const [email, setEmail] = useState('user@example.com');
+  const [email, setEmail] = useState('');
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onNext(email);
@@ -25,16 +25,17 @@ const CredentialsStep: React.FC<{ onNext: (email: string) => void }> = ({ onNext
             type="email" 
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            placeholder="your@email.com"
             className="w-full mt-1 p-3 bg-[#1C1920] border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-[#F4C2C2] focus:outline-none" required />
         </div>
         <div>
           <label className="text-sm font-medium text-gray-300" htmlFor="password">Password</label>
-          <input id="password" type="password" defaultValue="password" className="w-full mt-1 p-3 bg-[#1C1920] border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-[#F4C2C2] focus:outline-none" required />
+          <input id="password" type="password" placeholder="••••••••" className="w-full mt-1 p-3 bg-[#1C1920] border border-gray-600 rounded-md text-white focus:ring-2 focus:ring-[#F4C2C2] focus:outline-none" required />
         </div>
         <button type="submit" className="w-full bg-[#F4C2C2] text-[#582630] font-bold py-3 rounded-md hover:bg-opacity-90 transition-all">
           Sign In
         </button>
-         <p className="text-xs text-center text-gray-500 pt-2">Use `admin@example.com` to view admin panel.</p>
+         <p className="text-xs text-center text-gray-500 pt-2 invisible">Hint: Use `admin@example.com` to view admin panel.</p>
       </form>
     </>
   );
