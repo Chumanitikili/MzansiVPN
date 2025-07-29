@@ -20,9 +20,9 @@ export const SERVERS: Server[] = [
 ];
 
 export const USER_SESSIONS: UserSession[] = [
-    { id: 1, userEmail: 'user@example.com', lastLogin: '2024-07-29 10:30', country: 'South Africa', dataUsedMB: 2450, durationMinutes: 120 },
-    { id: 2, userEmail: 'another@example.com', lastLogin: '2024-07-29 09:45', country: 'United Kingdom', dataUsedMB: 850, durationMinutes: 65 },
-    { id: 3, userEmail: 'guest@example.com', lastLogin: '2024-07-28 18:15', country: 'United States', dataUsedMB: 5120, durationMinutes: 240 },
-    { id: 4, userEmail: 'dev@example.com', lastLogin: '2024-07-28 15:00', country: 'Germany', dataUsedMB: 125, durationMinutes: 25 },
-    { id: 5, userEmail: 'test@example.com', lastLogin: '2024-07-27 11:55', country: 'Japan', dataUsedMB: 1530, durationMinutes: 88 },
+    { id: 1, userEmail: 'user-alpha@domain.com', lastLogin: '2024-07-29 10:30', country: 'South Africa', dataUsedMB: 2450, durationMinutes: 120 },
+    { id: 2, userEmail: 'user-beta@domain.com', lastLogin: '2024-07-29 09:45', country: 'United Kingdom', dataUsedMB: 850, durationMinutes: 65 },
+    { id: 3, userEmail: 'user-gamma@domain.com', lastLogin: '2024-07-28 18:15', country: 'United States', dataUsedMB: 5120, durationMinutes: 240 },
+    { id: 4, userEmail: 'user-delta@domain.com', lastLogin: '2024-07-28 15:00', country: 'Germany', dataUsedMB: 125, durationMinutes: 25 },
+    { id: 5, userEmail: 'user-epsilon@domain.com', lastLogin: '2024-07-27 11:55', country: 'Japan', dataUsedMB: 1530, durationMinutes: 88 },
 ];
